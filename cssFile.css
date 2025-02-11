@@ -1,0 +1,217 @@
+
+/*STANDARD BODY*/
+body{
+    background: rgb(0, 223, 212, 1);
+    h1{
+        font-family:'Courier New', Garamond, Monaco, Verdana;
+        color:#fa59c0;
+        font-size: 3.75em;
+        /*text-decoration: underline;*/
+        text-align:center;
+    }
+    p{
+        font-family: 'Lucida Console', Monaco, 'Courier New', 'Times New Roman', Verdana, Arial;
+        /*font-size: 1.1em;*/
+        line-height: 1.2em;
+    }
+    h2{
+        font-family: 'Courier New', Garamond, Monaco, Verdana;
+        font-size: 2.5em;
+        line-height:0.75em;
+    }
+    h3{
+        font-family: 'Courier New', Garamond, Monaco, Verdana;
+        font-size: 1.5em;
+        line-height: 0.4em;
+    }
+}
+
+/*NAVIGATION BAR*/
+ul{
+    list-style-type:none;
+    display:inline;
+    overflow: hidden;
+}
+li{
+    float:left;
+}
+li a:hover{
+    background: #034277;
+    font-weight: bold;
+}
+.aNav{
+    display:block;
+    background: #00dfd4;
+    font-family: 'Lucida Console', Monaco, 'Courier New', 'Times New Roman', Verdana, Arial;
+    font-size: 1.5em;
+    color:#fa59c0;
+    padding:20px;
+    text-decoration: none;
+}
+
+
+/*HEADER*/
+.Header{
+    padding-top: 250px;
+    padding-bottom: 250px;
+    /*background:#001283;*/
+    background-image: url("images/background.png");  
+    background-size: cover;
+    background-position: center;
+    h1{
+        font-family:'Courier New', Garamond, Monaco, Verdana;
+        text-align: center;
+        font-size: 5.0em;
+        /*color: #fe9235;*/
+        color:white;
+        background: rgb(0, 223, 212, 0.7);
+        text-decoration:solid;
+        font-weight:1500;
+        /*padding-left: 100px;
+        padding-right: 100px;*/
+    }
+    p{
+        font-family: 'Lucida Console', Monaco, 'Courier New', 'Times New Roman', Verdana, Arial;
+        text-align: center;
+        font-size: 2.25em;
+        /*color:#034277;*/
+        color:white;
+        background: rgb(254, 146, 53, 0.8);
+        padding-top: 5px;
+        padding-bottom: 5px;
+        text-decoration: solid;
+    }
+}
+
+
+/*SPLIT SCREEN IN 2*/
+.Split{
+    display:flex;
+}
+.SplitLeft{
+    background: #fe9235;
+    h1{
+        font-family:'Courier New', Garamond, Monaco, Verdana;
+        font-size: 3.75em;
+        text-align:center;
+        color:#034277;
+        /*text-decoration: underline;*/
+    }
+    h2{
+        font-family:'Courier New', Garamond, Monaco, Verdana;
+        text-align:center;
+        color:#034277;
+    }
+    h3{
+        text-align:justify;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    p{
+        font-family: 'Lucida Console',Monaco, 'Courier New', 'Times New Roman', Verdana, Arial;
+        font-size: 1.5em;
+        line-height: 1.5;
+        text-align:justify; 
+        padding-left: 40px;
+        padding-right: 40px; 
+    }
+}
+.SplitRight{
+    h1{
+        font-family:'Courier New', Garamond, Monaco, Verdana;
+    }
+    p{
+        font-family: 'Lucida Console', Monaco, 'Courier New', 'Times New Roman', Verdana, Arial;
+    }
+}
+
+
+/*BUTTONS IN MAIN*/
+.button{
+    background:#034277;
+    cursor:pointer;
+    border-radius: 50%;
+    height: 110px;
+    width: 110px;
+    font-size: 3em;
+    text-align:center;
+    border: none;
+    color:#fe9235;
+}
+.button:hover span{ /*Cleans the previous text from the buttons*/
+    display: none;
+}
+
+/*Inserts new text in the button*/
+.education:hover:before{ /*Education*/
+    content:"Education";
+}
+.work:hover:before{ /*Work*/
+    content:"Work";
+}
+.volunteer:hover:before{ /*Volunteer*/
+    content:"Volunteering";
+}
+.language:hover:before{ /*Languages*/
+    content:"Languages";
+}
+.exchange:hover:before{ /*Exchange*/
+    content:"Exchange Program";
+}
+.hackathon:hover:before{ /*Hackathon*/
+    content:"Hackathon";
+}
+/*The content changes according to each button*/
+
+.button:hover{ /*Sets the new background color*/
+    background:#00dfd4;
+    font-size:1.5em;
+    font-family: 'Lucida Console', Monaco, 'Courier New', 'Times New Roman', Verdana, Arial;
+    text-align:center;
+}
+
+
+/*FOOTER*/
+footer{
+    background:#034277;
+    text-align:center;
+    color:#fe9235;
+    padding-top: 1px;
+    padding-left: 10px;
+    padding-right: 10px;
+    line-height: 1.5em;
+}
+
+/*SOCIAL MEDIA BUTTONS IN THE FOOTER*/
+.SocialMedia{
+    background: #034277;
+    color:#00dfd4;
+    border: none;
+    cursor: pointer;
+    font-size: 1.5em;
+}
+
+
+/*
+LIST OF COLORS
+
+Dark blue: #001283
+            0, 18, 131, 0.5
+Blue: #0024ff
+Yellow: #ffda00
+
+OR
+
+#0B61A4
+#9FEE00
+#ff9200
+#CD0074
+#009999
+
+
+    --color2: #00dfd4;
+    --color1: #034277;
+    --color3: #fe9235;
+    --color4: #fa59c0;
+#C3E3FD
+*/
